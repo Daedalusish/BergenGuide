@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Favoritt Toalett</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body onload="initSystem('favToilet');">
+		<!-- Navbar -->
+		<div class="navContainer">
+			<a class="linkNav" href="Index.html">Hjem</a>
+			<a class="linkNav" href="playground.html">Lekeplasser</a>
+			<a class="linkNav" href="Toilets.html">Toaletter</a>
+			<a class="linkNav" id="active" href="FavToilet.html">Favoritt Toalett</a>
+			<a class="linkNav" href="pub.html">Pub</a>
+		</div>
+		<!-- Header Img-->
+		<div id="containerImg">
+			<img id="coverImg" src="Media/BergenHeader.png" width="1200" height="529" alt="Monochrome photo of Bergen">
+		</div>
+		<!-- Content -->
+		<section class="content">
+		</br>
+			<!-- Search field entry -->
+			<div class="formField">
+				<div id="targetOption"></div>
+				<form action="FavToilet.html" id="selector" accepted-charset="UTF-8" method="GET">
+					<input type="Submit"></form>
+					<p></p>
+				<div id="targetOption"></div>
+			</div>
+			<!-- Search Results -->
+			<div id="targetHeader"></div>
+			<ol id="orderList">
+				<div id="targetList"></div>
+			</ol>
+		</section>
+		<!-- Google Map -->
+		<section class="mapContainer">
+			<div id="map"></div>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsDntt79fV1ArkSCxH1hvyVbD2ZapF4yA&libraries=geometry&callback=initMap"></script>
+		</section>
+		<!-- Footer -->
+		<p id="footer"> <a href="ToBeAdded">Privacy Policy</a> <a href="ToBeAdded">Contact</a> <a href="ToBeAdded">Terms & Conditions</a></p>
+	</body>
+</html>

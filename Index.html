@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Velkommen til Bergen</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+function dT() {
+var elt = document.getElementById("clock");
+var now = new Date();
+elt.innerHTML = now.toLocaleTimeString();
+setTimeout(dT, 1000);
+}
+window.onload = dT;
+</script>
+	</head>
+	<body onload="initMe()">
+		<!-- Navbar -->
+		<div class="navContainer">
+			<a class="linkNav" id="active" href="Index.html">Hjem</a>
+			<a class="linkNav" href="playground.html">Lekeplasser</a>
+			<a class="linkNav" href="Toilets.html">Toaletter</a>
+			<a class="linkNav" href="FavToilet.html">Favoritt Toalett</a>
+			<a class="linkNav" href="pub.html">Pub</a>
+		</div>
+		<!-- Header Img-->
+		<div id="containerImg">
+			<img id="coverImg" src="media/BergenHeader.png" width="1200" height="529" alt="Monochrome photo of Bergen">
+		</div>
+			<!-- Content -->
+			<span id="clock"></span>
+		<section class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor quis justo eu molestie. Integer sodales augue id dignissim mollis. In scelerisque nibh non quam mollis efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse blandit lacus ut luctus elementum. Maecenas in tincidunt enim, a mollis nisi. Vestibulum odio magna, maximus id turpis at, semper molestie ex.
+			</p>
+			<p>
+				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean pretium, dolor a blandit vestibulum, enim ante porttitor nunc, non pulvinar lectus libero in sem. Maecenas erat magna, sollicitudin quis consectetur id, finibus ut arcu. Nunc sagittis velit quam, in maximus nisl convallis non. Mauris quis lobortis odio, nec volutpat magna. Vestibulum metus nisi, condimentum at mattis sit amet, faucibus vel dui. Morbi eleifend malesuada pellentesque. Nam eget ornare ex, nec egestas mauris. Nulla est purus, condimentum et dolor id, congue pharetra nulla. Phasellus fermentum, velit at aliquam iaculis, justo nibh accumsan neque, eu congue odio risus ac magna. Nam lacinia rhoncus orci, sit amet ultricies nibh consectetur eu. Fusce efficitur faucibus lacus, at finibus tortor gravida vel. Fusce consequat quis urna at tempor. Duis feugiat ex et turpis sagittis placerat. Donec placerat finibus lacinia. Proin tempor et ligula eu lacinia.
+			</p>
+		</section>
+		<!-- Footer -->
+		<p id="footer"> <a href="#">Privacy Policy</a> <a href="#">Contact</a> <a href="#">Terms & Conditions</a></p>
+	</body>
+</html>

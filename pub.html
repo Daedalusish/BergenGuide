@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pub</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+		<script type="text/javascript" src="./js/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body onload="initSystem('pub');">
+		<!-- Navbar -->
+		<div class="navContainer">
+			<a class="linkNav" href="Index.html">Hjem</a>
+			<a class="linkNav" href="playground.html">Lekeplasser</a>
+			<a class="linkNav" href="Toilets.html">Toaletter</a>
+			<a class="linkNav" href="FavToilet.html">Favoritt Toalett</a>
+			<a class="linkNav" id="active" href="pub.html">Pub</a>
+		</div>
+		<!-- Header Img-->
+		<div id="containerImg">
+			<img id="coverImg" src="Media/BergenHeader.png" width="1200" height="529" alt="Monochrome photo of Bergen">
+		</div>
+			<!-- Content -->
+			<section class="content">
+				</br>
+				<!-- Search Field Form -->
+				<div class="formField">
+					<form action="pub.html" method="GET">
+						<label>Type<input type="text" name="Type" style="width:4em"></label>
+						<label>Navn<input type="text" name="Pub" style="width:4em"></label>
+						<label>Aldersgrense<input type="number" name="Aldersgrense" style="width:4em"></label>
+						<label>Adresse<input type="text" name="Adresse" style="width:4em"></label>
+						<label><input type="submit" value="Søk"></label>
+					</form>
+				</div>
+				<!-- List of pubs -->
+				<div id="targetShow"></div>
+			</section>
+			<!-- Footer -->
+			<p id="footer"> <a href="ToBeAdded">Privacy Policy</a> <a href="ToBeAdded">Contact</a> <a href="ToBeAdded">Terms & Conditions</a></p>
+		</div>
+	</body>
+</html>

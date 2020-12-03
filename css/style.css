@@ -1,0 +1,118 @@
+/* General styling */
+*{
+	font-family: Quicksand;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	text-align: center;
+}
+
+section.content{
+	width:100%;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+}
+section.content p, section.content h1{
+	max-width:90%;
+	text-align: center;
+	justify-content: center;
+}
+
+ol{
+	text-align: center;
+	list-style-position: inside;
+}
+/**************************************************
+/* Navbar Styling*/
+
+.navContainer{
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+}
+.navContainer a{
+	box-sizing: border-box;
+	flex-grow: 1;
+	font-size: 3vh;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 2px;
+	background-color: white;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+}
+
+.linkNav:hover, #active:hover{
+	background-color: grey;
+	transition: .3s;
+	}
+
+#active{
+	background-color: #E2373F;
+}
+/* navbar restyling (horizontal to vertical) */
+@media only screen and (max-width: 600px){
+	.navContainer {
+		width: 100%;
+		flex-direction: column;
+	}
+	.navContainer a{
+		display: block;
+	}
+}
+/* Image scaler */
+.containerImg {
+	display:flex;
+}
+
+#coverImg {
+	width: 100%;
+	height: auto;
+}
+/*****************************************
+/* Search Fields styling */
+.containField{
+	display:flex;
+	flex-direction: column;
+}
+.formField {
+	width: 100%;
+	flex-direction: row;
+	text-align: center;
+}
+label{
+	display:inline-flex;
+	flex-direction: row;
+	border-style:ridge ;
+	border-color: grey;
+	flex-wrap:wrap;
+	padding: 0.3em;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+/*********************************
+/* Map Styling */
+#map {
+	margin: 0 auto 0 auto;
+	height: 50%;
+	width: 90%;
+}
+
+/* Footer Styling */
+#footer{
+	text-align: center;
+}
+#footer a {
+	display: inline-flex;
+	color: #E2373F;
+	margin: 1em 1em;
+	position: flex;
+}
